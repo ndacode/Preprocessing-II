@@ -6,14 +6,31 @@
     flex-direction: row;
     margin-top: 2rem;
     height: 6rem;
+    div {
+        width: 50%;
+        @media @mobile {
+        text-align: center;
+        }
+    }
     .links {
         margin: o auto;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        width: 76%;
+        width: 50%;
+        @media @mobile {
+            width: 85%;
+            justify-content: center;
+        }
         a {
             padding: 1.5rem;
+            font-size: 1.5rem;
         }
+    }
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 8rem;
     }
 }
